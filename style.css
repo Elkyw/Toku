@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100px;
+}
+
+body {
+  margin: 0;
+  overflow-y: scroll;
+  font-size: .16rem;
+  font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Segoe UI", "Microsoft Yahei", Tahoma, Arial, STHeiti, sans-serif;
+  line-height: 2;
+  color: #404040;
+}
+
+input,
+.button {
+  display: inline-block;
+  margin: .05rem;
+  padding: .08rem .06rem;
+  font-size: .16rem;
+  line-height: 1.2;
+  vertical-align: middle;
+  font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Segoe UI", "Microsoft Yahei", Tahoma, Arial, STHeiti, sans-serif;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input {
+  width: 6em;
+}
+
+input.name {
+  text-align: center;
+}
+
+.button {
+  border: 1px solid #404040;
+  background: #404040;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  border: 1px solid #000;
+  background: #000;
+}
+
+hr {
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+  margin-top: .05rem;
+  margin-bottom: .05rem;
+  border-top: 1px solid #ccc;
+}
+
+em {
+  font-weight: bold;
+  font-style: normal;
+  color: #808080;
+}
+
+.box {
+  margin: .05rem;
+}
+
+.box-flex {
+  /* webkit, moz历史版本兼容 */
+  display: -webkit-box;
+  display: -moz-box;
+  /* IE私有写法 */
+  display: -ms-flexbox;
+  /* 标准写法 */
+  display: -webkit-flex;
+  display: flex;
+}
+
+.box-flex > .box-flex-item {
+  /* webkit, moz历史版本兼容 */
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  /* IE私有写法 */
+  -ms-flex: 1;
+  /* 标准写法 */
+  -webkit-flex: 1;
+  flex: 1;
+}
